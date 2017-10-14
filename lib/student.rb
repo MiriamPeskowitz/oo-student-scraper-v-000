@@ -14,7 +14,7 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(students_array)
+  def self.create_from_collection(student)
     #iterates over the array of hashes and crates a new individaul student using each hash.
     #argument is: the return value of the scraper.scrape_index_page
     students_array
