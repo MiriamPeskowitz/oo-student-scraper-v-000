@@ -22,7 +22,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    attributes_hash do |key, value| 
+    attributes_hash do |key, value|
       self.send(("#{key}="), value)
     end
     self
@@ -30,7 +30,7 @@ class Student
 
   def new
 
-  end 
+  end
 
   def self.all
       @@all
