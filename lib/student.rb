@@ -9,6 +9,7 @@ class Student
  #this will use #send. also, add the newly created student to the @@all array.
     student_hash.each do
       |key, value| self.send(("#{key}="), value)
+      binding.pry
     end
     @@all << self
   end
